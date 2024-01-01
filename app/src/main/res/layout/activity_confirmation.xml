@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:inputType="text"
+        android:text="CRASHED ???"
+        android:textColor="#E6141E"
+        android:textSize="48dp"
+        android:background="@android:color/transparent"
+        android:textStyle="bold|italic"
+        android:padding="0dp"
+    />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/transparent"
+        android:inputType="textMultiLine"
+        android:textStyle="bold|italic"
+        android:text="Rapid Rescue will trigger alert\n     If no response is received."
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/editTextText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/alert"
+        android:drawableLeft="@drawable/tick"
+        android:hapticFeedbackEnabled="true"
+        android:padding="16dp"
+        android:text="Yes, Trigger Alert"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/yesButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/speed"
+        android:drawableLeft="@drawable/cancel"
+        android:padding="16dp"
+        android:text="No, I am Good!"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context="com.mc.rapidrescue.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="RAPID RESCUE"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:textColor="#000080"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/startDriving"
+        android:layout_width="275dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/editTextText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/speed"
+        android:drawableLeft="@drawable/steering_wheel"
+        android:text="Drive Now"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/profileData"
+        android:layout_width="275dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/startDriving"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/buttonshape"
+        android:drawableLeft="@drawable/user"
+        android:text="Profile Data"
+        android:textColor="@android:color/white"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/sendSmsButton"
+        android:layout_width="275dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/profileData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/alert"
+        android:drawableLeft="@android:drawable/ic_dialog_alert"
+        android:padding="16dp"
+        android:hapticFeedbackEnabled="true"
+        android:text="Send Alert"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

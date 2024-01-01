@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mc.rapidrescue.MainActivity">
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Details"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/calibri"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:id="@+id/editTextFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="First Name"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:id="@+id/editTextLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="Last Name"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:id="@+id/editTextPhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="Phone Number"
+                                android:inputType="phone"
+                                app:placeholder="_"
+                                android:maxLines="1"
+                                android:maxLength="10"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:id="@+id/editTextBloodGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="Blood Group"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:id="@+id/editTextHealthDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="Other Health Details"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/buttonSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/calibri"
+                    android:text="Save Details"
+                    android:layout_marginTop="32dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/calibri"
+                    android:text="Go Back To Home"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+</RelativeLayout>

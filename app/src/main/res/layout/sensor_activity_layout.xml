@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Details"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="@font/calibri"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- KPIs -->
+    <LinearLayout
+        android:id="@+id/kpiContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewHeader"
+        android:layout_marginTop="32dp">
+
+        <!-- Resp Rate KPI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/rr"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Respiratory Rate"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/respiratoryRateTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/calibri"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bpm"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Heart Rate KPI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/hr"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Heart Rate"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/heartRateTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/calibri"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bpm"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Speed KPI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/speed"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Speed"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/speedRateTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/calibri"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m/s"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Button at the Bottom -->
+    <Button
+        android:id="@+id/endrideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Ride"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/calibri"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
