@@ -1,4 +1,4 @@
-# rapid-rescue
+# Rapid-Rescue
 
 # RapidRescue: A Real-Time Collision Detection and Emergency Response System
 
