@@ -131,4 +131,6 @@ No additional external files & executables are required apart from the dependenc
 
 Rapid Rescue transcends being a mere application; it is a proactive safety companion for drivers, utilizing real-time data to elevate road safety and emergency responsiveness.
 
+- ## For Detailed Information :
+Please refer to the "REPORT.pdf" file in the repository.
 For any issues or inquiries, contact Rushabh Jaiswal (rjaisw15@asu.edu) or VenkataSwaraj Kotapati (vkotapati@asu.edu). 
