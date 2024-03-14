@@ -4,6 +4,12 @@
 
 Rapid Rescue is an advanced mobile application meticulously crafted for real-time monitoring and swift emergency response during driving. The application places user safety at the forefront by seamlessly incorporating personal details, health information, and emergency contacts into a secure storage system.
 
+
+
+https://github.com/SwarajKotapati/RapidRescue/assets/70504997/ca28315c-7ccb-46c0-886d-be1b33a4fc12
+
+
+
 Prerequisites Software:
 Android Studio
 - Latest Android Version (KitKat Minimum).
